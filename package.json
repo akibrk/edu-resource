@@ -59,5 +59,8 @@
   ],
   "jest": {
     "preset": "@vue/cli-plugin-unit-jest"
+  },
+  "vue": {
+    "outputDir": "./docs"
   }
 }
