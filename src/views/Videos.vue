@@ -1,5 +1,9 @@
 <template>
   <div class="videos view">
+    <div class="playlists">
+      <h1>Guided Playlist</h1>
+      <PlaylistCard v-for="(list, index) in playlists" :key="index" :playlist="list"></PlaylistCard>
+    </div>
     <div class="channels">
       <h1>YouTube Channels</h1>
       <div class="category" v-for="(category, index) in categories" :key="index">
@@ -12,11 +16,13 @@
 
 <script>
 import WebCard from "@/components/WebCard";
+import PlaylistCard from "@/components/PlaylistCard";
 
 export default {
   name: "VideosView",
   components: {
     WebCard,
+    PlaylistCard,
   },
   data() {
     return {
@@ -81,10 +87,18 @@ export default {
               ],
             },
             {
-              name: "The Trev Tutor",
-              url: "https://www.youtube.com/channel/UCGYSfZbPp3BiAFs531PBY7g",
-              description: "All kinds of math, good explanation",
-              tags: ["math", "free"],
+              name: "Free Code Camp Youtube",
+              url: "https://www.youtube.com/c/Freecodecamp/playlists",
+              description:
+                "A load of Programming, CS and web development related videos",
+              tags: ["video", "cs", "how-to", "free"],
+            },
+            {
+              name: "Arno1",
+              url: "https://www.youtube.com/channel/UC_ubXf4aCPdf760qwKGH16w",
+              description:
+                "Programming, robotics and CS related videos - My Channel!",
+              tags: ["video", "cs", "how-to", "free"],
             },
           ],
         },
@@ -135,6 +149,35 @@ export default {
               description:
                 "Engineering, math, computer science videos from MIT",
               tags: ["math", "engineering", "free", "cs"],
+            },
+          ],
+        },
+      ],
+      playlists: [
+        {
+          title: "Web Fundamentals",
+          description:
+            "Start from the left and watch them in sequence, watch in youtube for full screen.",
+          videos: [
+            {
+              key: "UB1O30fR-EE",
+              details: "HTML 5 For Beginners",
+            },
+            {
+              key: "yfoY53QXEnI",
+              details: "CSS 3 For Beginners",
+            },
+            {
+              key: "hdI2bqOjy3c",
+              details: "JavaScript For Beginners",
+            },
+            {
+              key: "hJHvdBlSxug",
+              details: "How the internet works",
+            },
+            {
+              key: "iYM2zFP3Zn0",
+              details: "HTTP for beginners",
             },
           ],
         },

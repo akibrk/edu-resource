@@ -37,6 +37,8 @@ export default {
     a {
       color: #777;
     }
+    word-wrap: wrap;
+    word-break: break-all;
   }
 }
 </style>

@@ -26,7 +26,10 @@ export default {
   text-align: left;
   padding: 1rem;
   color: #444;
-
+  background-image: url("../assets/img/er_background.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   p {
     margin-top: 0.5rem;
   }
