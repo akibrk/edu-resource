@@ -11,12 +11,19 @@
 </template>
 
 <style lang="scss">
+@import "@/assets/scss/general";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: $font_rale;
   text-align: center;
-  color: #2c3e50;
+  color: #000f1f;
 }
 
 #nav {
@@ -24,13 +31,13 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  box-shadow: 0.2rem 0.2rem #777;
+  @extend .shadow-lighter;
   a {
     font-weight: bold;
     color: #2c3e50;
 
     &.router-link-exact-active {
-      color: #0084ac;
+      color: $col_accent;
     }
   }
 
@@ -38,10 +45,17 @@
     display: block;
     padding: 0.5rem;
     text-decoration: none;
+    border: 2px solid transparent;
   }
   .nav-link:hover {
-    background-color: #8ae4ff;
+    border: 2px solid $col_grey_lightest;
     border-radius: 0.2rem;
+  }
+}
+
+@media only screen and(max-width: 600px) {
+  #nav {
+    justify-content: center;
   }
 }
 </style>

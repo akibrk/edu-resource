@@ -1,0 +1,9 @@
+@import './mixins';
+
+.shadow-dark {
+    @include boxShadow();
+}
+
+.shadow-lighter {
+    @include boxShadow(#aaa);
+}

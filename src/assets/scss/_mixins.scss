@@ -1,0 +1,6 @@
+@import './variables';
+
+
+@mixin boxShadow($col: #777) {
+    box-shadow: .2vh .2vh .2vh $col;
+}
