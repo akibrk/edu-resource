@@ -20,8 +20,11 @@
 }
 
 #nav {
-  padding: 10px;
+  height: 10vh;
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0.2rem 0.2rem #777;
   a {
     font-weight: bold;
     color: #2c3e50;
