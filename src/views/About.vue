@@ -1,5 +1,36 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="about view">
+    <article>
+      <h2>What is this?</h2>
+      <p>Curated links to videos and websites related to CS</p>
+    </article>
+    <article>
+      <h2>Who is this for</h2>
+      <p>For everyone.</p>
+    </article>
+    <article>
+      <h2>Who made this?</h2>
+      <p>
+        This guy ->
+        <a href="https://github.com/akibrezakhan">@akibrezakhan</a>
+      </p>
+    </article>
   </div>
 </template>
+<style lang="scss" scoped>
+.view {
+  //background-color: #ffffff;
+  text-align: left;
+  padding: 1rem;
+
+  article {
+    margin: 0.5rem;
+    h2 {
+      color: #4b4b4b;
+    }
+    p {
+      margin-top: 0.5rem;
+    }
+  }
+}
+</style>

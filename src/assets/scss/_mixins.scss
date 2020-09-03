@@ -2,5 +2,5 @@
 
 
 @mixin boxShadow($col: #777) {
-    box-shadow: .2vh .2vh .2vh $col;
+    box-shadow: .2vh .2vh .3vh .1vh $col;
 }

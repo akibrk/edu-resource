@@ -31,7 +31,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  @extend .shadow-lighter;
+  //@extend .shadow-lighter;
   a {
     font-weight: bold;
     color: #2c3e50;
@@ -50,6 +50,17 @@
   .nav-link:hover {
     border: 2px solid $col_grey_lightest;
     border-radius: 0.2rem;
+  }
+}
+
+.view {
+  //background-color: #efefef;
+  height: 90vh;
+  overflow-y: auto;
+
+  a {
+    text-decoration: none;
+    color: $col_accent;
   }
 }
 
