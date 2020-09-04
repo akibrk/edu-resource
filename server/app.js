@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
-const helmet = require('helmet');
+//const helmet = require('helmet');
 const app = express();
 
 const port = process.env.PORT || 3300;
@@ -10,7 +10,7 @@ const port = process.env.PORT || 3300;
 
 // Middleware
 app.use(cors());
-app.use(helmet());
+//app.use(helmet());
 
 app.use(express.static(path.join(__dirname, '/public')));
 
