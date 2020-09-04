@@ -1,9 +1,9 @@
 <template>
   <div class="home view">
     <h1>Edu Resources</h1>
-    <h4>Curated collection of links</h4>
+    <h4>A curated collection of educational resources</h4>
     <p>
-      Something is wrong? Like to add something?
+      Something is wrong or broken? or Like to add something?
       <br />Create a request
       <a href="https://github.com/akibrezakhan/edu-resource">here</a>
     </p>

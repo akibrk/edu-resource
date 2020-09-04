@@ -6,7 +6,11 @@
       <router-link class="nav-link" to="/websites">Websites</router-link>
       <router-link class="nav-link" to="/about">About</router-link>
     </div>
-    <router-view />
+    <keep-alive>
+
+      <router-view />
+
+    </keep-alive>
   </div>
 </template>
 
