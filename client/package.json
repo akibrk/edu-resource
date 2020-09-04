@@ -61,6 +61,6 @@
     "preset": "@vue/cli-plugin-unit-jest"
   },
   "vue": {
-    "outputDir": "../deploy"
+    "outputDir": "../server/public"
   }
 }
