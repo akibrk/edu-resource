@@ -12,7 +12,7 @@
       <h2>Who made this?</h2>
       <p>
         This guy ->
-        <a href="https://github.com/akibrk_">@akibrk_</a>
+        <a href="https://twitter.com/akibrk_">@akibrk_</a>
       </p>
     </article>
   </div>
